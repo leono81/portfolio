@@ -69,6 +69,7 @@ body {
     margin: 0px;
     background-color: blueviolet;
     text-align: center;
+    padding-bottom: 60px;
 }
 
 .skills > h2 {
@@ -91,8 +92,6 @@ body {
     width: 300px;
     margin: 20px;
     background-color: white;
-    /* margin: 0px 35px;
-    border: 1px solid black; */
     border-radius: 15px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -105,21 +104,91 @@ body {
 
 .proyectos{
     height: 400px;
-    width: 90%;
-    margin: 30px 5%;
+    width: 100%;
+    margin: 30px 0;
     text-align: center;
 }
 
-.proyectos_img--contenedor{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap:wrap;
+.carousel{
+    overflow: scroll;
+    /* padding-left: 30px; */
+    width: 100%;
+    position: relative;
 }
 
-.proyectos_img--contenedor .proyectos_img{
-    height: 350px;
-    width: 300px;
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel__container{
+    transition: 450ms -webkit-transform;
+    transition: 450ms transform;
+    transition: 450ms transform, 450ms -webkit-transform;
+    font-size: 0;
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+
+.carousel-item{
+    background-color: palevioletred;
+    width:200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left:10px;
+    display:inline-block;
+    cursor:pointer;
+    transition: 450ms all; /* hace que cualquier animacion que se realiza tenga una transicion de 450ms*/
+    transform-origin: center left; /*Configura el sentido de la transformacion */
+    position: relative;
+}
+
+.carousel-item:hover ~ .carousel-item{
+    transform: translate3d(100px, 0, 0)
+}
+
+.carousel__container:hover .carousel-item{
+    opacity: 0.3;
+}
+
+.carousel__container:hover .carousel-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.carousel-item__img{
+    width:200px;
+    height:250px;
+    object-fit:cover;/*spara que la imagen se adecue al contenedor*/
+}
+
+.carousel-item__details{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    margin:0;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    bottom: 0px;
+    right:0px;
+}
+
+.carousel-item:hover .carousel-item__details{
+    opacity:1;
+}
+
+.carousel-item__details img{
+    height:30px;
+    width: 30px;
+}
+
+.carousel-item__details p{
+    color:white;
+    margin:5px 0;
 }
 
 .contacto{
