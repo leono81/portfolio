@@ -7,23 +7,22 @@ body {
 
 .header {
     background-color: blueviolet;
-    margin: 5px 5px 0px;
-    width: calc(100% - 10px);
+    margin: 0;
+    width: 100%;
     height: 40px;
     position: sticky;
     position: -webkit-sticky;
-    border-radius: 25px;
     z-index: 1000;
     top: 0; /* required */
-    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.8);
-    -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.8);
-    -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.8);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.8);
 }
 
 .about-me {
     width: 90%;
-    height: 500px;
-    margin: 30px 5% -23px;
+    height: 100vh;
+    margin: -30px 5% -23px;
     /* border-top: 1px solid black;
     border-bottom: 1px solid black; */
     background-image: url(https://images.pexels.com/photos/1257099/pexels-photo-1257099.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
@@ -35,6 +34,7 @@ body {
     align-items: flex-end;
     flex-direction: column;
     /* border-radius: 15px; */
+
 }
 
 .about-me > p {
@@ -106,7 +106,7 @@ body {
 .proyectos{
     height: 400px;
     width: 90%;
-    margin: 10px 5%;
+    margin: 30px 5%;
     text-align: center;
 }
 
@@ -120,8 +120,25 @@ body {
 .proyectos_img--contenedor .proyectos_img{
     height: 350px;
     width: 300px;
-    
-    /* margin: 5px; */
 }
 
+.contacto{
+    height:200px;
+    margin:30px 0;
+    text-align: center;
+}
+
+
+
+
+.footer{
+    background-color: blueviolet;
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    bottom: 0; /* required */
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.8);
+}
   
