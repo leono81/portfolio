@@ -42,7 +42,9 @@
     content: "\eaca";
   }
 /* Fin fuentes */
-
+html {
+    width: 100%;
+}
 
 body {
     margin: 0px;
@@ -52,7 +54,7 @@ body {
 }
 
 .header {
-    background-color: #347474;
+    background-color: #303841;
     margin: 0;
     width: 100%;
     height: 50px;
@@ -102,7 +104,7 @@ body {
     border-radius: 15px; 
 }
 
-.image_shadow {
+/* .image_shadow {
     display: inline-block;
     position: relative;
     background: #63b7af;
@@ -111,16 +113,18 @@ body {
     width: 308px;
     clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0);
     margin: 0 40px;
-}
+} */
 
 
 .about-me img {
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    height:350px;
-    width: 300px;
-    clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0);
+    height: 50vh;
+    width: auto;
+    border-radius: 50% 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ff5722;
+    border-image: initial;
+    margin-right:30px;
 }
 
 .about-me__texto{
@@ -129,7 +133,7 @@ body {
 
 .about-me__texto h2{
     font-size: 3em;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .about-me__texto> p {
@@ -145,8 +149,9 @@ body {
 .triangle_top{
     width: 100%;
     height: 50px;
-    background-color: #f8b400;
+    background-color: #00adb5;
     clip-path: polygon(0% 0, 0 100%, 100% 100%);
+    margin-bottom: 0px;
 }
 
 .triangle_bottom--shadow{
@@ -156,15 +161,16 @@ body {
 .triangle_bottom{
     width: 100%;
     height: 50px;
-    background-color: #f8b400;
+    background-color: #00adb5;
     clip-path: polygon(100% 0, 0 0%, 100% 100%);
+    margin-top: 0px;
 }
 
 .skills {
     height: auto;
     width: 100%;
     margin: 0px;
-    background-color: #f8b400;
+    background-color: #00adb5;
     text-align: center;
     padding-bottom: 60px;
 }
@@ -184,29 +190,41 @@ body {
 }
 
 .skills_cards {
-    height: 400px;
-    width: 300px;
+    height: 350px;
+    width: auto;
     margin: 20px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    
 }
-
 .skills_cards > h3 {
     color: #63b7af;
 }
 
-.skills_cards > ul {
-    margin: 0 35px 0 10px;
+.skillcard__contenido--container{
+    display:flex;
+    align-items: center;
+}
+.skill_cards--ilustracion{
+    height: 400px;
+    width: auto;
+    margin: 0;
+}
+
+
+.skillcard__contenido--container  ul {
+    margin: 0 10px;
+    width: 250px;
 }
 
 
 .skills_cards  li {  
     color: #c72c41;
     text-align: left;
-    margin: 25px 0;
+    line-height: 35px;
 }
 
 .skills_cards li > span{
@@ -308,31 +326,32 @@ body {
 
 .contacto {
     height:200px;
-    margin:30px 0;
+    width: 100%;
+
+    margin:0;
     text-align: center;
+    background-color: #303841;  
+    box-shadow: 0px 1px 10px 5px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0px 1px 10px 5px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 1px 10px 5px rgba(0,0,0,0.8);
+    padding-top: 30px;
 
 }
 
 .contacto > h2 {
     font-size: 2em;
-    margin-bottom: 60px;
+    color:white;
+    margin: 0 0 60px 0;
 }
 
 .contacto a {
     font-size: 40px;
     margin: 10px;
-    color: #63b7af;
+    color: #ff5722;
     text-decoration: none;
 }
 
 
 .footer {
-    background-color: #347474;
-    margin: 0;
-    width: 100%;
-    height: 40px;
-    bottom: 0;  
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.8);
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.8);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.8);
+    
 }
