@@ -104,16 +104,7 @@ body {
     border-radius: 15px; 
 }
 
-/* .image_shadow {
-    display: inline-block;
-    position: relative;
-    background: #63b7af;
-    box-sizing: border-box;
-    height:358px;
-    width: 308px;
-    clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0);
-    margin: 0 40px;
-} */
+
 
 
 .about-me img {
@@ -125,7 +116,9 @@ body {
     border-color: #ff5722;
     border-image: initial;
     margin-right:30px;
-}
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);    }
 
 .about-me__texto{
     margin: 10px;
@@ -222,7 +215,7 @@ body {
 
 
 .skills_cards  li {  
-    color: #c72c41;
+    color: #ff5722;
     text-align: left;
     line-height: 35px;
 }
@@ -308,26 +301,44 @@ body {
     left:0px;
     bottom: 0px;
     right:0px;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-end;
+    width:90%;
 }
 
 .carousel-item:hover .carousel-item__details {
     opacity:1;
 }
 
-.carousel-item__details img {
-    height:30px;
-    width: 30px;
+.carousel-item__details a {
+    position: relative;
+    z-index: 100;
+    text-decoration: none;
+    color:white;
+    padding: 5px;
+    transition: 50ms;
+    background-color: #ff5722;
+    border-radius: 5px;
+    padding: 1px 4px;
 }
+
+.carousel-item__details a:hover {
+    text-decoration: underline;
+}
+
 
 .carousel-item__details p {
     color:white;
     margin:5px 0;
+    text-align: left;
+    padding-left: 5px;
 }
 
 .contacto {
     height:200px;
     width: 100%;
-
     margin:0;
     text-align: center;
     background-color: #303841;  
@@ -335,7 +346,6 @@ body {
     -webkit-box-shadow: 0px 1px 10px 5px rgba(0,0,0,0.8);
     -moz-box-shadow: 0px 1px 10px 5px rgba(0,0,0,0.8);
     padding-top: 30px;
-
 }
 
 .contacto > h2 {
