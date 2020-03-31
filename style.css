@@ -93,13 +93,13 @@ body {
 
 .about-me {
     width: 90%;
-    height: 80vh;
     margin: 10px 5%;
     border-radius: 15px;
     display: flex;
     justify-content: center; 
     align-items: center;
     flex-wrap: wrap-reverse;
+    padding: 20px 0;
 }
 
 
@@ -189,8 +189,9 @@ body {
     margin: 20px;
     background-color: white;
     border-radius: 15px;
-    transition: 500ms;
+    transition: 700ms;
 }
+
 
 .skills:hover .skills_cards{
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -339,6 +340,8 @@ body {
     margin:5px 0;
     text-align: left;
     padding-left: 5px;
+    display: block;
+    z-index: 3;
 }
 
 
@@ -430,6 +433,18 @@ body {
     }
     .links__container.is_active {
         left: 0;
+    }
+
+    .about-me__texto h2{
+        font-size: 2em;
+        margin-top: 0px;
+    }
+
+    .about-me img {
+        height: 250px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     }
 }
 

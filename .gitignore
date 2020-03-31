@@ -1,5 +1,5 @@
 /img
+/node_modules
 /.vscode
 *.jpg
 *.png
-/node_modules
