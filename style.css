@@ -230,7 +230,7 @@ body {
 .atras {
   border: 1px solid black;
   color: white;
-  background-color: #63b7af;
+  background-color: #303841;
   -webkit-transform: rotateY(90deg) translateZ(130px);
   -moz-transform: rotateY(90deg) translateZ(130px);
   transform: rotateY(90deg) translateZ(130px);
